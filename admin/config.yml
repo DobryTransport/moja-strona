@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main  # lub master, jeśli tak masz w repo
+
+media_folder: "static/media"  # folder na obrazki w repozytorium
+public_folder: "/media"
+
+collections:
+  - name: "pages"
+    label: "Strony"
+    files:
+      - file: "index.html"
+        label: "Strona główna"
+        fields:
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Opis", name: "description", widget: "text" }
